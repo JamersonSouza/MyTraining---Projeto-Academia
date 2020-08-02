@@ -1,0 +1,66 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+   
+}
+/*fontes*/
+@font-face{
+    src: url("../assets/fonts/PirataOne-Regular.ttf");
+    font-family: "Pirata-One";
+}
+@font-face{
+    src: url("../assets/fonts/Roboto-Light.ttf");
+    font-family: "Roboto";
+}
+@font-face{
+    src: url("../assets/fonts/nasalization-rg.ttf");
+    font-family: 'Nasalization';
+}
+@font-face{
+    src: url("../assets/fonts/NyataFTR-Regular.otf");
+    font-family: 'nyata';
+}
+
+/*Estilização header */
+.menu{background-color: #000;
+display: flex; max-width: 100%;
+margin: 0 auto; padding: 15px 0; flex-wrap: wrap;
+justify-content: space-between; align-items: center;}
+
+.menu a{color: #fff;}
+/*estilização nav*/
+.nav-menu ul{display: flex; flex-wrap: wrap;}
+.nav-menu a {font-size: 1.50em; display: block; padding: 20px; font-family: 'Pirata-One';}
+.nav-menu a:hover{color: #B15D10;}
+/*Estilização dos icones*/
+.iconify{color: #B15D10;}
+/*Logo efeito transition */
+.logo img.logo-transition{
+    display: none;
+}
+.logo:hover img.logo-default{
+    display: none;
+}
+.logo:hover img.logo-transition{
+    display: inherit;
+}
+
+/*Estilização main*/
+.main{
+    height: 700px;
+    background-size: cover;
+    background-position: center;   
+}
+.txt-main{color: #fff;
+display: flex; justify-content: center; padding-top: 230px;
+align-items: center; font-family: 'Nasalization'; font-size: 6em;
+font-style: italic; letter-spacing: 5px; text-shadow: 1px 1px 4px #B15D10;}
+
+.btn-start{background-color: #B15D10;
+width: 250px; text-align: center; margin-top: 20px;
+padding: 15px; cursor: pointer;
+border-bottom: 3px solid #97571C; color: #fff;
+font-family: 'nyata'; font-size: 1.25em; letter-spacing: 3px;}
