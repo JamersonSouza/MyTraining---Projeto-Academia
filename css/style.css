@@ -72,11 +72,12 @@ font-style: italic; letter-spacing: 5px; text-shadow: 1px 1px 4px #B15D10;
 }
 
 .btn-start{background-color: #B15D10;
-width: 250px; text-align: center; margin-top: 20px; height: 60px;
+width: 250px; text-align: center; margin-top: 20px;
 padding: 15px; cursor: pointer;
 border-bottom: 3px solid #97571C; color: #fff;
 font-family: 'nyata'; font-size: 1.25em; letter-spacing: 3px;
 border-radius: 3px;}
+
 .btn-start:hover{color: #ffbf76; }
 /*efeito sombreamento*/
 .main > .sub-main{
