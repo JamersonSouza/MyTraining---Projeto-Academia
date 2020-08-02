@@ -1,0 +1,13 @@
+/* Responsividade */
+
+@media screen and (max-width: 667px){
+  .txt-main{text-align: center;}
+  .main{background-position: center;}
+  .rodape{flex-direction: column;}
+  .contato{padding: 10px;}
+  .copy{padding: 5px;}
+  .version{padding: 5px;}
+
+}
+
+

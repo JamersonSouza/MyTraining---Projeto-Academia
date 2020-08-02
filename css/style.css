@@ -6,6 +6,7 @@
     text-decoration: none;
    
 }
+a:link{text-decoration: none;}
 /*fontes*/
 @font-face{
     src: url("../assets/fonts/PirataOne-Regular.ttf");
@@ -23,12 +24,17 @@
     src: url("../assets/fonts/NyataFTR-Regular.otf");
     font-family: 'nyata';
 }
+@font-face{
+    src: url("../assets/fonts/TerminalDosis-Light.ttf");
+    font-family: 'terminal';
+}
 
 /*Estilização header */
 .menu{background-color: #000;
 display: flex; max-width: 100%;
 margin: 0 auto; padding: 15px 0; flex-wrap: wrap;
-justify-content: space-between; align-items: center;}
+justify-content: space-between; align-items: center;
+border-bottom: 1px solid #fff;}
 
 .menu a{color: #fff;}
 /*estilização nav*/
@@ -51,16 +57,52 @@ justify-content: space-between; align-items: center;}
 /*Estilização main*/
 .main{
     height: 700px;
-    background-size: cover;
-    background-position: center;   
+    width: 100%;
+    background-size: cover !important;
+    background-position: center;
+    background-repeat: no-repeat;   
+    position: relative;   
 }
+
+/*Texto central*/
 .txt-main{color: #fff;
 display: flex; justify-content: center; padding-top: 230px;
 align-items: center; font-family: 'Nasalization'; font-size: 6em;
-font-style: italic; letter-spacing: 5px; text-shadow: 1px 1px 4px #B15D10;}
+font-style: italic; letter-spacing: 5px; text-shadow: 1px 1px 4px #B15D10;
+}
 
 .btn-start{background-color: #B15D10;
-width: 250px; text-align: center; margin-top: 20px;
+width: 250px; text-align: center; margin-top: 20px; height: 60px;
 padding: 15px; cursor: pointer;
 border-bottom: 3px solid #97571C; color: #fff;
-font-family: 'nyata'; font-size: 1.25em; letter-spacing: 3px;}
+font-family: 'nyata'; font-size: 1.25em; letter-spacing: 3px;
+border-radius: 3px;}
+.btn-start:hover{color: #ffbf76; }
+/*efeito sombreamento*/
+.main > .sub-main{
+    position: relative;
+    z-index: 105;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+
+}
+/* estilização footer */
+.rodape{
+    background-color: #121212;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    min-height: 70px;
+    align-items: center;
+}
+.copy{font-family: 'terminal'; font-size: 1.25em;}
+.contato{font-family: 'Roboto'; font-size: 1.25em;}
+.version{font-family: 'Roboto'; font-size: 1.25em;}
+
