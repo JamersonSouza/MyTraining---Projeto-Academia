@@ -15,7 +15,7 @@
 
 <body>
 
-    <header class="menu">
+    <header>
         <div class="logo">
             <a href="index.html">
                 <img class="logo-default" src="assets/logo-myt.jpg">
@@ -24,14 +24,17 @@
                 <img class="logo-transition" src="assets/logo_transition.jpg">
             </a>
         </div>
-        <nav class="nav-menu">
-            <ul>
+        <nav>
+            <ul class="active" >
                 <li><a href="#"><span class="iconify" data-icon="map:gym"></span> Treinos</a></li>
                 <li><a href="#"><span class="iconify" data-icon="mdi:account"></span> Perfil</a></li>
-                <li><a href="#"><span class="iconify" data-icon="mdi:arm-flex"></span> Metas</a></li>
+                <li><a href="#"><span class="iconify" data-icon="mdi:arm-flex"></span>  Metas</a></li>
             </ul>
         </nav>
-      
+        <div class="menu-toggle">
+            <span class="iconify" data-icon="heroicons-outline:menu"></span>
+        </div>
+        
     </header>
 
     <section class="main" style=" background-image: url('../assets/img-main-site.jpg');">
@@ -56,6 +59,21 @@
             <span>v.1.0</span>
         </div>
     </footer>
+
+    <script>
+          const menuToggle = document.querySelector('.menu-toggle');
+          const nav = document.querySelector('nav');
+              menuToggle.addEventListener('click', () => {
+            if (nav.className != 'active') {
+                nav.className = 'active';
+                }
+            else {
+                nav.className = '';
+                }
+        });
+    </script>
+
+
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </body>
 
