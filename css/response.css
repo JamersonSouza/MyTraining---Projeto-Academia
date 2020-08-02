@@ -1,12 +1,14 @@
 /* Responsividade */
 
 @media screen and (max-width: 667px){
-  .txt-main{text-align: center;}
+  .txt-main{text-align: center; font-size: 4.5em;}
   .main{background-position: center;}
   .rodape{flex-direction: column;}
   .contato{padding: 10px;}
   .copy{padding: 5px;}
   .version{padding: 5px;}
+  .nav-menu li{flex-direction: column; display: flex;}
+  
 
 }
 
