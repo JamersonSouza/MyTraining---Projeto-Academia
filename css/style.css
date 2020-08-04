@@ -176,3 +176,5 @@ progress::-webkit-progress-value {
     color: #fff;
 }
 
+.card-text {font-family: 'Pirata-One'; font-size: 2.2em; color: #000;}
+.card-text:hover{color: #B15D10;}
