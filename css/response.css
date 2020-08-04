@@ -7,7 +7,7 @@
   .contato{padding: 10px;}
   .copy{padding: 5px;}
   .version{padding: 5px;}
-  .card{margin-bottom: 30px; text-align: center;}
+  .card{margin-bottom: 30px; text-align: center; width: 22rem;}
   .card-text{text-align: center;}
   progress{width: 100%;}
 
