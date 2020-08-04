@@ -26,7 +26,7 @@
         </div>
         <nav>
             <ul class="active" >
-                <li><a href="#"><span class="iconify" data-icon="map:gym"></span> Treinos</a></li>
+                <li><a href="treinos.html"><span class="iconify" data-icon="map:gym"></span> Treinos</a></li>
                 <li><a href="#"><span class="iconify" data-icon="mdi:account"></span> Perfil</a></li>
                 <li><a href="#"><span class="iconify" data-icon="mdi:arm-flex"></span>  Metas</a></li>
             </ul>
@@ -41,7 +41,7 @@
         <div class="sub-main">
             <h1 class="txt-main">My Training</h1>
             <div class="btn-start">
-                <h3>START</h3>
+                <a href="treinos.html"><h3>START</h3></a>
             </div>
         </div>
     </section>
@@ -59,20 +59,21 @@
         </div>
     </footer>
 
+ 
     <script>
-          const menuToggle = document.querySelector('.menu-toggle');
-          const nav = document.querySelector('nav');
-              menuToggle.addEventListener('click', () => {
-            if (nav.className != 'active') {
-                nav.className = 'active';
-                }
-            else {
-                nav.className = '';
-                }
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+            menuToggle.addEventListener('click', () => {
+          if (nav.className != 'active') {
+              nav.className = 'active';
+              }
+          else {
+              nav.className = '';
+              }
         });
-    </script>
+        </script>
 
-
+        
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </body>
 

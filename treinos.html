@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jamerson Souza">
+    <meta name="description" content="Sistema de Gerenciamento de Treino na Academia">
+    <meta name="keywords" content="Treino na academia, gerencie seu treino, app de treino, academia">
+    <title>Treinos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/response.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img class="logo-default" src="assets/logo-myt.jpg">
+            </a>
+            <a href="index.html">
+                <img class="logo-transition" src="assets/logo_transition.jpg">
+            </a>
+        </div>
+        <nav>
+            <ul class="active" >
+                <li><a href="index.html"><span class="iconify" data-icon="clarity:home-solid"></span> Home</a></li>
+                <li><a href="treinos.html"><span class="iconify" data-icon="map:gym"></span> Treinos</a></li>
+                <li><a href="#"><span class="iconify" data-icon="mdi:account"></span> Perfil</a></li>
+                <li><a href="#"><span class="iconify" data-icon="mdi:arm-flex"></span>  Metas</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <span class="iconify" data-icon="heroicons-outline:menu"></span>
+        </div>
+    </header>
+    <section class="treinos" style="background-image: url('../assets/bg-main.jpg');">
+        <!--Barra de progresso-->
+        <div class="progresso">
+            <h2>Meu Progresso Atual</h2>
+            <h3 style="text-align: center; color: #fff;">30%</h3>
+        </div>
+        <div>
+            <progress value="30" max="100"></progress>
+        </div>
+
+        <div class="container treinos-container">
+            
+            <div class="row" style="padding: 0 80px;">
+                <!--Peito-->
+                <div class="card" style="width: 18rem;  top: 60px;  cursor: pointer;">
+                    <img src="assets/peito.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <p class="card-text">Treino de Peito</p>
+                    </div>
+                  </div>
+          
+            <!--Costa-->
+
+            <div class="card" style="width: 18rem;  top: 60px;  cursor: pointer;">
+                <img src="assets/costa.jpg"  class="card-img-top">
+                <div class="card-body">
+                  <p class="card-text">Treino de Costa</p>
+                </div>
+              </div>
+
+                <!--Pernas-->  
+                <div class="card" style="width: 18rem;  top: 60px; cursor: pointer;">
+                    <img src="assets/pernas.jpg" style="width: 285px; height: 190px;" class="card-img-top">
+                    <div class="card-body">
+                      <p class="card-text">Treino de Pernas</p>
+                    </div>
+                  </div>
+                                 
+                </div>
+        </div>
+<br><br><br>
+<footer class="rodape" style="margin-top: 122px;">
+    <div class="contato">
+        <li><span class="iconify" data-icon="dashicons:whatsapp"></span> (81) 9 8979-8488</li>
+        <li><span class="iconify" data-icon="ant-design:instagram-filled"></span>@Jamerson.zip</li>
+    </div>
+    <div class="copy">
+        <span> © 2020 - Desenvolvido por: Jamerson Souza </span>
+    </div>
+    <div class="version">
+        <span>v.1.0</span>
+    </div>
+</footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+            menuToggle.addEventListener('click', () => {
+          if (nav.className != 'active') {
+              nav.className = 'active';
+              }
+          else {
+              nav.className = '';
+              }
+        });
+        </script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+</body>
+</html>
