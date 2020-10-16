@@ -10,9 +10,7 @@
     <title>Treinos</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/response.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
 </head>
 
 <body>
@@ -38,48 +36,242 @@
             <span class="iconify" data-icon="heroicons-outline:menu"></span>
         </div>
     </header>
-    <section class="treinos" style="background-image: url('../assets/bg-main.jpg');">
+    <section class="treinos" style="background-image: linear-gradient(to left, #232526, #414345);">
         <!--Barra de progresso-->
         <div class="progresso">
             <h2>Meu Progresso Atual</h2>
             <h3 style="text-align: center; color: #fff;">30%</h3>
         </div>
         <div>
-            <progress value="30" max="100"></progress>
+            <progress value="30"  max="100"></progress>
         </div>
+      
 
         <div class="container treinos-container">
             
             <div class="row" style="padding: 0 80px;">
                 <!--Peito-->
                 <div class="card" style="width: 18rem;  top: 60px;  cursor: pointer;">
-                    <img src="assets/peito.jpg" class="card-img-top">
+                    <a  data-toggle="modal" data-target="#modalPeito">
+                    <img  src="assets/peito.jpg" class="card-img-top">
+                    </a>
                     <div class="card-body">
-                      <p class="card-text">Treino de Peito</p>
+                      <p  data-toggle="modal" data-target="#modalPeito" class="card-text">Treino de Peito</p>
                     </div>
                   </div>
           
             <!--Costa-->
 
             <div class="card" style="width: 18rem;  top: 60px;  cursor: pointer;">
-                <img src="assets/costa.jpg"  class="card-img-top">
+                <a data-toggle="modal" data-target="#modalCostas" >
+                    <img src="assets/costa.jpg"  class="card-img-top">
+                </a>
                 <div class="card-body">
-                  <p class="card-text">Treino de Costa</p>
+                  <p data-toggle="modal" data-target="#modalCostas"  class="card-text">Treino de Costa</p>
                 </div>
               </div>
 
                 <!--Pernas-->  
-                <div class="card" style="width: 18rem;  top: 60px; cursor: pointer;">
-                    <img src="assets/pernas.jpg" class="card-img-top">
+                <div class="card"  style="width: 18rem;  top: 60px; cursor: pointer;">
+                   <a data-toggle="modal" data-target="#modalPernas"> 
+                       <img src="assets/pernas.jpg" class="card-img-top">
+                   </a>
                     <div class="card-body">
-                      <p class="card-text">Treino de Pernas</p>
+                      <p data-toggle="modal" data-target="#modalPernas" class="card-text">Treino de Pernas</p>
                     </div>
                   </div>
-                                 
+
+                  <div class="card"  style="width: 18rem;  top: 80px; cursor: pointer;">
+                    <a data-toggle="modal" data-target="#modalOmbro"> 
+                        <img src="assets/ombro.jpg" class="card-img-top">
+                    </a>
+                     <div class="card-body">
+                       <p data-toggle="modal" data-target="#modalOmbro" class="card-text">Treino de Ombro</p>
+                     </div>
+                   </div>
+                        <br><br><br>         
                 </div>
         </div>
-<br><br><br>
-<footer class="rodape" style="margin-top: 122px;">
+</section>
+   
+<!-- Inicio dos Modals -->
+<div class="modal fade" id="modalPernas" >
+    <div  class="modal-dialog modal-md modal-lg modal-sm " >
+        <div class="modal-content" style="background-color: #535353;">
+            <div class="modal-header">
+            <h5 class="modal-title" style="font-family: Pirata-One;
+            font-size: 2em; color: #EF6C00; letter-spacing: 1px;">Treino de Pernas</h5>
+            </div>
+            
+            <div class="modal-body">
+
+                <label for="check">AGACH NO SMITH: &nbsp;&nbsp;4 - 12</label>
+                <input type="checkbox" value="0" class="check-input" id="check">
+                <hr style="background-color: #FFF; width: 50%;">
+                <label for="check">CAD. EXTENSORA: &nbsp;&nbsp;3 - 12 (+ 12)</label>
+                <input type="checkbox" value="0" class="check-input" id="check">
+                <hr style="background-color: #FFF; width: 50%;">
+                <label for="check">LEG 45: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 - 12</label>
+                <input type="checkbox" value="0" class="check-input" id="check">
+                <hr style="background-color: #FFF; width: 50%;">
+                <label for="check">AFUNDO NO SMITH: &nbsp;&nbsp;3 - 12</label>
+                <input type="checkbox" value="0" class="check-input" id="check">
+                <hr style="background-color: #FFF; width: 50%;">
+                <label for="check">ABDUTORA: &nbsp;&nbsp;3 - 20</label>
+                <input type="checkbox" value="0" class="check-input" id="check">
+                <hr style="background-color: #FFF; width: 50%;">
+                <label for="check">PANTUR. EM PÉ: &nbsp;&nbsp;4 - 20</label>
+                <input type="checkbox" value="0" class="check-input" id="check">
+                <hr style="background-color: #FFF; width: 50%;">
+               
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal"><span class="iconify" data-icon="bi:x" data-inline="false"></span> Fechar</button>
+                <button type="button" class="btn btn-success"><span class="iconify" data-icon="clarity:success-line" data-inline="false"></span> Concluir Treino</button>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+<!--Modal Treino Costa-->
+
+<div class="modal fade" id="modalCostas" >
+    <div  class="modal-dialog modal-md modal-lg modal-sm " >
+        <div class="modal-content" style="background-color: #535353;">
+            <div class="modal-header">
+            <h5 class="modal-title" style="font-family: Pirata-One;
+            font-size: 2em; color: #EF6C00; letter-spacing: 1px;">Treino de Pernas</h5>
+            </div>
+            <div class="modal-body">
+
+                <label for="check">PUXADOR FRENTE NE: &nbsp;&nbsp;&nbsp;4 - 12</label>
+                <input type="checkbox" value="0" class="check-input" id="check">
+                <hr style="background-color: #FFF; width: 50%;">
+
+                <label for="check">PUXADOR FRENTE PR: &nbsp;&nbsp;3 - 12</label>
+                <input type="checkbox" value="0" class="check-input" id="check">
+                <hr style="background-color: #FFF; width: 50%;">
+
+                <label for="check">REM MAQ NEUT: &nbsp;&nbsp;3 - 12</label>
+                <input type="checkbox" value="0" class="check-input" id="check">
+                <hr style="background-color: #FFF; width: 50%;">
+
+                <label for="check">ROSCA 21: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 - 0</label>
+                <input type="checkbox" value="0" class="check-input" id="check">
+                <hr style="background-color: #FFF; width: 50%;">
+
+                <label for="check">ROSCA SCOT MAQ: &nbsp;&nbsp; 3 - F</label>
+                <input type="checkbox" value="0" class="check-input" id="check">
+                <hr style="background-color: #FFF; width: 50%;">
+
+                <label for="check">ROSCA MARTELO: &nbsp;&nbsp;3 - 12</label>
+                <input type="checkbox" value="0" class="check-input" id="check">
+                <hr style="background-color: #FFF; width: 50%;">
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal"><span class="iconify" data-icon="bi:x" data-inline="false"></span> Fechar</button>
+                <button type="button" class="btn btn-success"><span class="iconify" data-icon="clarity:success-line" data-inline="false"></span> Concluir Treino</button>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="modalPeito" >
+    <div  class="modal-dialog modal-md modal-lg modal-sm " >
+        <div class="modal-content" style="background-color: #535353;">
+            <div class="modal-header">
+            <h5 class="modal-title" style="font-family: Pirata-One;
+            font-size: 2em; color: #EF6C00; letter-spacing: 1px;">Treino de Pernas</h5>
+            </div>
+            <div class="modal-body">
+
+                <label for="check">SUPINO RETO: &nbsp;&nbsp;&nbsp;4 - 12 + (12 FLEXÃO)</label>
+                <input type="checkbox" value="0" class="check-input" id="check">
+                <hr style="background-color: #FFF; width: 50%;">
+
+                <label for="check">SUPINO INC DUMBE: &nbsp;&nbsp;3 - 12</label>
+                <input type="checkbox" value="0" class="check-input" id="check">
+                <hr style="background-color: #FFF; width: 50%;">
+
+                <label for="check">FLY: &nbsp;&nbsp;&nbsp;&nbsp;4 - 12</label>
+                <input type="checkbox" value="0" class="check-input" id="check">
+                <hr style="background-color: #FFF; width: 50%;">
+
+                <label for="check">TRICEPS INV UNI: &nbsp;&nbsp;3 - 12</label>
+                <input type="checkbox" value="0" class="check-input" id="check">
+                <hr style="background-color: #FFF; width: 50%;">
+
+                <label for="check">TRICEPS CORDA: &nbsp;&nbsp;&nbsp;3 - F</label>
+                <input type="checkbox" value="0" class="check-input" id="check">
+                <hr style="background-color: #FFF; width: 50%;">
+
+
+                <label for="check">TRICEPS TESTA CR: &nbsp;&nbsp;&nbsp;3 - 12</label>
+                <input type="checkbox" value="0" class="check-input" id="check">
+                <hr style="background-color: #FFF; width: 50%;">
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal"><span class="iconify" data-icon="bi:x" data-inline="false"></span> Fechar</button>
+                <button type="button" class="btn btn-success"><span class="iconify" data-icon="clarity:success-line" data-inline="false"></span> Concluir Treino</button>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="modalOmbro" >
+    <div  class="modal-dialog modal-md modal-lg modal-sm " >
+        <div class="modal-content" style="background-color: #535353;">
+            <div class="modal-header">
+            <h5 class="modal-title" style="font-family: Pirata-One;
+            font-size: 2em; color: #EF6C00; letter-spacing: 1px;">Treino de Pernas</h5>
+            </div>
+            <div class="modal-body">
+
+                <label for="check">DESEN ARNOLD: &nbsp;&nbsp;&nbsp;3 - 12</label>
+                <input type="checkbox" value="0" class="check-input" id="check">
+                <hr style="background-color: #FFF; width: 50%;">
+
+                <label for="check">DESENVOL DUMB: &nbsp;&nbsp;3 - 12</label>
+                <input type="checkbox" value="0" class="check-input" id="check">
+                <hr style="background-color: #FFF; width: 50%;">
+
+                <label for="check">ELEVAÇÃO POSTERI: &nbsp;&nbsp;&nbsp;&nbsp;3 - 12</label>
+                <input type="checkbox" value="0" class="check-input" id="check">
+                <hr style="background-color: #FFF; width: 50%;">
+
+                <label for="check">ENCOLHIMENTO: &nbsp;&nbsp;3 - F</label>
+                <input type="checkbox" value="0" class="check-input" id="check">
+                <hr style="background-color: #FFF; width: 50%;">
+
+                <label for="check">REMADA ALTA POL CORDA: &nbsp;&nbsp;&nbsp;3 - F</label>
+                <input type="checkbox" value="0" class="check-input" id="check">
+                <hr style="background-color: #FFF; width: 50%;">
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal"><span class="iconify" data-icon="bi:x" data-inline="false"></span> Fechar</button>
+                <button type="button" class="btn btn-success"><span class="iconify" data-icon="clarity:success-line" data-inline="false"></span> Concluir Treino</button>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+
+<footer class="rodape">
     <div class="contato">
         <li><span class="iconify" data-icon="dashicons:whatsapp"></span> (81) 9 8979-8488</li>
         <li><span class="iconify" data-icon="ant-design:instagram-filled"></span>@Jamerson.zip</li>
@@ -104,7 +296,11 @@
               }
         });
         </script>
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+        <script src="assets/js/jquery-3.5.1.min.js"></script> 
+        <script src="assets/js/bootstrap.js"></script>
+        <script src="assets/js/bootstrap.bundle.js"></script>
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
 </body>
 </html>
