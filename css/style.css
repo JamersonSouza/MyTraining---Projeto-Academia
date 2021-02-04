@@ -260,7 +260,7 @@ color: #fff; font-family: 'terminal';}
 }
 .container-profile{
     width: 100%;
-    min-height: 803px;
+    height: 790px;
     background-image: linear-gradient(to top, #606c88, #3f4c6b)
 }
 
