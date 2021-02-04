@@ -144,7 +144,7 @@ border-radius: 3px;}
     background-size: cover !important;
     background-repeat: no-repeat;
 }
-.progresso{margin-top: 60px;}
+.progresso{padding-top: 60px;}
 
 .progresso h2 {color: #ffa500; font-size: 5em; text-align: center;
     font-family: 'Pirata-One'; padding: 30px 0; text-shadow: 1px 1px 4px #121212;}
@@ -215,6 +215,7 @@ color: #fff; font-family: 'terminal';}
     text-align: center;
     display: flex;
     justify-content: center;
+
  
 }
 /*efeito sublinhado no texto */
@@ -262,3 +263,52 @@ color: #fff; font-family: 'terminal';}
     min-height: 803px;
     background-image: linear-gradient(to top, #606c88, #3f4c6b)
 }
+
+/*style page metas */
+
+.footer{
+    margin-top: 20px;
+    min-height: 400px;
+    z-index: 100;
+    
+}
+.footer img{
+    margin-top: 150px;
+}
+
+.container-metas{
+    width: 100%;
+    z-index: 99;
+    height: 902.22px;
+    background-image: linear-gradient(to top, #606c88, #3f4c6b)
+}
+.progresso-metas{
+    padding-top: 130px;;
+}
+.progresso-metas h2 {color: #ffa500; font-size: 5em; text-align: center;
+    font-family: 'Pirata-One'; padding: 30px 0; text-shadow: 1px 1px 4px #121212;}
+.progress-bar{display: flex;}
+
+/*formulario para editar a meta*/
+.container-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 101;  
+    margin-top: -500px; 
+    
+}
+.form-metas{
+    width: 400px;
+    height: 340px;
+    border-radius: 5%;
+    padding: 30px 30px;
+    background: #c3c1c1;
+}
+.form-metas > .title{
+    text-align: center;
+    color: #121212;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 0;
+}   

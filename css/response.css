@@ -10,11 +10,17 @@
   .card{margin-bottom: 25px; text-align: center;}
   .card-text{text-align: center;}
   progress{width: 100%;}
-
+  .editButton{flex-direction: row;}
+  .footer img{
+    margin-top: 450px;
+}
+.container-form{
+  margin-top: -500px
+}
 }
 
 @media(max-width: 991px){
-
+  
   header{padding: 15px}
   nav{
   position: absolute;
@@ -40,6 +46,6 @@
       color: #fff;
       display: block;
   }
-
+  
 
 }
