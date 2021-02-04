@@ -186,3 +186,79 @@ progress::-webkit-progress-value {
 }
 label{font-size: 1.5em; font-weight: bold; cursor: pointer;
 color: #fff; font-family: 'terminal';}
+
+/*Style profile page */
+.img-profile{
+    width: 100%;
+    padding-bottom: 30px;
+}
+.img-profile > img {
+    border-radius: 180px;
+    border: 2px solid #fff;
+}
+.profile{
+    margin: 0;
+    padding: 140px 0 30px;
+    text-align: center;
+}
+.title-profile h1{
+    font-family: 'Pirata-One';
+    color: #fff;
+}
+.title-profile h2{
+    font-family: 'Roboto';
+    color: #fff;
+}
+.buttons{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+ 
+}
+/*efeito sublinhado no texto */
+.editButton a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #9b3900;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.editButton a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+.editButton a{
+    color: #fff;
+    position: relative;
+}
+.editButton a:hover{
+    text-decoration: none;
+    color: #9b3900;
+}
+/* fim efeito sublinhado */
+.editButton{
+    flex-direction: column;
+    margin: 10px;
+    width: 150px;
+    height: 60px;
+    padding-top: 13px;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: #ce7624;
+    font-family: 'Pirata-One';
+}
+.container-profile{
+    width: 100%;
+    min-height: 803px;
+    background-image: linear-gradient(to top, #606c88, #3f4c6b)
+}
