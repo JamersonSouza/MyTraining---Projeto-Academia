@@ -17,6 +17,9 @@
 .container-form{
   margin-top: -500px
 }
+.form-metas{
+  width: 380px;
+}
 }
 
 @media(max-width: 991px){
